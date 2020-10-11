@@ -1,0 +1,40 @@
+# DOTA dataset
+# Train command: python train.py --data DOTA.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /input/DOTA
+#     /yolov5
+
+
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ../input/DOTA/images/train/  # 1412 images
+val: ../input/DOTA/images/val/  # 459 images
+test: ../input/DOTA/images/test/  # 
+
+# number of classes
+nc: 16
+
+# class names                 # class number
+names: ['small-vehicle',      # 0
+        'large-vehicle',      # 1
+        'plane',              # 2
+        'storage-tank',       # 3
+        'ship',               # 4
+        'harbor',             # 5
+        'ground-track-field', # 6
+        'soccer-ball-field',  # 7
+        'tennis-court',       # 8
+        'swimming-pool',      # 9
+        'baseball-diamond',   # 10
+        'roundabout',         # 11
+        'basketball-court',   # 12
+        'bridge',             # 13
+        'helicopter',         # 14
+        'container-crane']    # 15
+
+# Print classes
+# with open('data/coco.yaml') as f:
+#   d = yaml.load(f, Loader=yaml.FullLoader)  # dict
+#   for i, x in enumerate(d['names']):
+#     print(i, x)

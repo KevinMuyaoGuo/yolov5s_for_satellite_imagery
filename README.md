@@ -1,0 +1,1 @@
+基于YOLOv5的卫星图像目标检测demo | A demo for satellite imagery object detection based on YOLOv5
